@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--桌面线性布局-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+>
+<!--轮播图区域线性布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="251dp"
+            android:background="#FFFFFF">
+<!--轮播图-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/first">
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+<!--        图标线性布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+<!--第一行图标线性布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+<!--图标一-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/ID_IMAGE_0"
+                        android:layout_height="64dp"
+                        android:src="@drawable/dianlaotie">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="烙铁">
+
+                    </TextView>
+
+                </LinearLayout>
+<!--图标二-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_gravity="center_horizontal"
+                        android:id="@+id/ID_IMAGE_1"
+                        android:layout_height="64dp"
+                        android:src="@drawable/erjiguan">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="二极管">
+
+                    </TextView>
+                </LinearLayout>
+<!--图标三-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:id="@+id/ID_IMAGE_2"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/boxingtu">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="波形图">
+
+                    </TextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+    <!--第二行按钮线性布局-->
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--            图标四-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ID_IMAGE_3"
+                    android:layout_height="64dp"
+                    android:src="@drawable/wifi">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="WIFI">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <!--            图标五-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ID_IMAGE_4"
+                    android:layout_height="64dp"
+                    android:src="@drawable/renwuguanliqi">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="任务管理器">
+
+                </TextView>
+
+            </LinearLayout>
+            <!--            图标六-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="64dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/ID_IMAGE_5"
+                    android:layout_height="64dp"
+                    android:src="@drawable/zhongqi">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="重启">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:text="功能测试按钮"
+        android:id="@+id/ID_BUTTON_0"
+        android:layout_height="wrap_content">
+
+    </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="控件之间联动测试"
+            android:id="@+id/ID_TEXT_0"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

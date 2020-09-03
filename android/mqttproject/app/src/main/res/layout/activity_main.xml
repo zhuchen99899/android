@@ -1,0 +1,50 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<!--    线性布局-->
+    <!--        充满副控件-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        >
+
+        <TextView
+        android:layout_width="wrap_content"
+        android:text="MQTT"
+        android:layout_gravity="top"
+        android:id="@+id/ID_TEXT_1"
+        android:layout_height="wrap_content"><!--        自适应-->
+    </TextView>
+        <EditText
+            android:layout_width="wrap_content"
+            android:hint="请输入名称"
+            android:textSize="20px"
+            android:layout_height="wrap_content"
+            >
+        </EditText>
+
+    <Button
+        android:layout_width="50dp"
+        android:id="@+id/ID_BUTTON_1"
+        android:background="@drawable/open"
+        android:layout_height="50dp">
+    </Button>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:src="@mipmap/ic_launcher_foreground_foreground"
+        android:layout_height="wrap_content"
+        >
+    </ImageView>
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Switch>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
